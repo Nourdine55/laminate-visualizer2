@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Laminate Floor Visualizer</title>
+  <script src="https://cdn.jsdelivr.net/npm/fabric@5.2.4/dist/fabric.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest"></script>
+
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    #laminates img {
+      width: 80px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Laminate Floor Visualizer</h2>
+
+  <p>Upload your space photo and choose a laminate.</p>
+
+  <input type="file" id="upload" accept="image/*">
+
+  <h3>Choose Laminate</h3>
+  <div id="laminates"></div>
+
+  <br>
+  <button id="download">Download Result</button>
+
+  <br><br>
+
+  <canvas id="canvas" width="900" height="650"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
